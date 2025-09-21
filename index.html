@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Wedding Of</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cover -->
+    <section class="cover">
+      <div class="cover-text">
+        <p class="sub text-shadow">The Wedding Of</p>
+        <h1 class="nama">Kinara</h1>
+        <h2 class="and">&</h2>
+        <h1 class="nama">Raditya</h1>
+        <p class="tanggal">2.3.25</p>
+
+        <!-- Kartu tamu -->
+        <div class="tamu">
+          <p>Kepada Yth.<br />Bapak/Ibu/Saudara/i</p>
+          <p class="guest">Nama Tamu</p>
+          <a href="#content" id="btnOpen" class="btn">Open Invitation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div id="content" class="hidden overflow-hidden">
+      <!-- Quote -->
+      <section class="quote">
+        <div class="ornamen">
+          <img src="assets/umbrella.png" alt="ornamen" />
+        </div>
+        <p class="arab">
+          وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا
+          لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً
+          ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ
+        </p>
+        <p>
+          "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+          pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung
+          dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa
+          kasih dan sayang."
+        </p>
+        <p>Surah Ar-Rum (21)</p>
+      </section>
+
+      <!-- Couple -->
+      <section class="couple">
+        <h2 class="sub-couple">The Wedding Of</h2>
+
+        <div class="bride">
+          <h2>The Bride</h2>
+          <div class="couple-card">
+            <div class="couple-card-line">
+              <div class="foto-bayang">
+                <img src="img/Bride.jpg" alt="bride" />
+              </div>
+
+              <p class="couple-name">Kirana Shakira Putri</p>
+              <p class="parent-name">Putri ketiga dari</p>
+              <p class="parent-name">Bapak Handoko &</p>
+              <p class="parent-name">Ibu Siti Nur Laila</p>
+
+              <div class="media-sosial">
+                <a href=""><img src="assets/instagram (2).svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="and-2">-&-</p>
+
+        <div class="groom">
+          <h2>The Groom</h2>
+          <div class="couple-card">
+            <div class="couple-card-line">
+              <div class="foto-bayang">
+                <img src="img/Groom.jpg" alt="groom" />
+              </div>
+              <p class="couple-name">Raditya Rahmat</p>
+              <p class="parent-name">Putra Pertama dari</p>
+              <p class="parent-name">Bapak Ahmad Suharto &</p>
+              <p class="parent-name">Ibu Jamilah</p>
+              <div class="media-sosial">
+                <a href=""><img src="assets/instagram (2).svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="event">
+        <div class="akad">
+          <img
+            src="assets/wedding-rings.png"
+            style="width: 45px; height: auto; margin-bottom: 1rem"
+            alt="asset"
+          />
+          <h2 class="sub-event">Akad</h2>
+          <p>Minggu, 9 Maret 20xx</p>
+          <p>08.00 - 10.00 WITA</p>
+          <p>Rumah Mempelai Wanita</p>
+          <p>Jl. Lorem ipsum no. 21 - South Borneo</p>
+          <a href="" class="btn-locate">Lihat Lokasi</a>
+        </div>
+
+        <div class="resepsi">
+          <img
+            src="assets/cheers.png"
+            style="width: 45px; height: auto; margin-bottom: 1rem"
+            alt="asset"
+          />
+          <h2 class="sub-event">Resepsi</h2>
+          <p>Minggu, 9 Maret 20xx</p>
+          <p>08.00 - 10.00 WITA</p>
+          <p>Rumah Mempelai Wanita</p>
+          <p>Jl. Lorem ipsum no. 21 - South Borneo</p>
+          <a href="" class="btn-locate">Lihat Lokasi</a>
+        </div>
+
+        <div class="countdown">
+          <h2 class="sub-event">Akan dimulai:</h2>
+          <div id="timer">
+            <div>
+              <span id="days">00</span>
+              <p>Hari</p>
+            </div>
+            <div>
+              <span id="hours">00</span>
+              <p>Jam</p>
+            </div>
+            <div>
+              <span id="minutes">00</span>
+              <p>Menit</p>
+            </div>
+            <div>
+              <span id="seconds">00</span>
+              <p>Detik</p>
+            </div>
+          </div>
+
+          <div class="save-date">
+            <a
+              href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Resepsi+Pernikahan+Kinara+%26+Raditya&dates=20261010T020000Z/20261010T060000Z&details=Acara+resepsi+pernikahan+Kinara+%26+Raditya.&location=Hotel+Grand+Indah,+Jakarta&sf=true&output=xml"
+              target="_blank"
+              class="btn btn-success"
+            >
+              Save the Date
+            </a>
+          </div>
+        </div>
+
+        <div class="maps">
+          <h2 class="sub-event">Lokasi</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.206797395094!2d114.5878867735173!3d-3.2989202411351806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de423a3fb5f2659%3A0x75f1cc80aad78356!2sGedung%20Sultan%20Suriansyah!5e0!3m2!1sid!2sid!4v1757907879412!5m2!1sid!2sid"
+            width="300"
+            height="300"
+            style="border: white 5px solid; border-radius: 25px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <br />
+          <p>Gedung Sultan Suriyansyah</p>
+          <p>Jl. Lorem ipsum no. 21 - South Borneo</p>
+
+          <a href="" class="btn-maps">Lihat Lokasi</a>
+        </div>
+      </section>
+
+      <section class="galeri">
+        <h2 class="sub-galeri">Prewedding Galeri</h2>
+
+        <button class="arrow arrow-left" id="leftBtn">&#8249;</button>
+        <button class="arrow arrow-right" id="rightBtn">&#8250;</button>
+
+        <div class="galeri-wrapper" id="galeriWrapper">
+          <div class="galeri-img">
+            <img src="img/foto-1.jpg" alt="" />
+            <img src="img/foto-2.jpg" alt="" />
+            <img src="img/foto-3.jpg" alt="" />
+            <img src="img/foto-1.jpg" alt="" />
+            <img src="img/foto-2.jpg" alt="" />
+            <img src="img/foto-3.jpg" alt="" />
+          </div>
+        </div>
+
+        <div id="galeriModal" class="modal hidden">
+          <span class="close">&times;</span>
+          <div class="nav-button left">&#10094;</div>
+          <img class="modal-content" id="previewImg" />
+          <div class="nav-button right">&#10095;</div>
+        </div>
+      </section>
+
+      <section class="rsvp">
+        <div
+          class="max-w-md mx-auto rounded-x-1 shawdow-md p-8"
+          style="background-color: white"
+        >
+          <h2 class="text-center text-gray-900 text-x1 font-semibold mb-8">
+            RSVP
+          </h2>
+          <p class="text-center text-gray-900 text-x1 mb-8">
+            Harap isi kehadiran di bawah ini:
+          </p>
+          <form id="rsvpForm" class="space-y-6">
+            <div>
+              <input
+                id="nama"
+                name="nama"
+                type="text"
+                placeholder="Nama"
+                required
+                class="w-full border border-gray-300 rounded-1g px-4 py-2 text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+              />
+            </div>
+            <div>
+              <label for="grup" class="block text-gray-700 text-sm mb-1"
+                >Grup</label
+              >
+              <input
+                id="grup"
+                name="grup"
+                type="text"
+                placeholder="Grup"
+                required
+                class="w-full border border-gray-300 rounded-1g px-4 py-2 text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+              />
+            </div>
+            <div>
+              <label for="whatsapp" class="block text-gray-700 text-sm mb-1"
+                >No WhatsApp</label
+              >
+              <div
+                class="flex border border-gray-300 rounded-1g overflow-hidden focus-within:ring-2 focus-within:ring-gray-300"
+              >
+                <select
+                  id="country_code"
+                  name="country_code"
+                  class="bg-white text-gray-700 px-3 py-2 border-r border-gray-300 focus:outline-none"
+                >
+                  <option value="+62">+62</option>
+                </select>
+                <input
+                  id="whatsapp"
+                  name="whatsapp"
+                  type="text"
+                  placeholder="No. WhatsApp"
+                  required
+                  class="flex-1 px-4 py-2 text-gray-500 placeholder-gray-400 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="kehadiran" class="block text-gray-700 text-sm mb-1"
+                >Kehadiran</label
+              >
+              <select
+                id="kehadiran"
+                name="kehadiran"
+                required
+                class="w-full border border-gray-300 rounded-1g px-4 py-2 text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+              >
+                <option value="" disabled selected>Kehadiran</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Berhalangan">Berhalangan</option>
+              </select>
+            </div>
+            <div>
+              <label for="komentar" class="block text-gray-700 text-sm mb-1"
+                >Komentar atau Ucapan</label
+              >
+              <textarea
+                id="komentar"
+                name="komentar"
+                rows="4"
+                placeholder="Komentar atau ucapan"
+                class="w-full border border-gray-300 rounded-1g px-4 py-2 text-gray-500 placeholder-gray-400 resize-none focus:outline-none focus:ring-2"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-[#819067] text-gray-700 py-2 text-center text-white text-sm"
+            >
+              Kirim
+            </button>
+          </form>
+        </div>
+        <div id="rsvpResults" class="mt-10 space-y-4"></div>
+      </section>
+
+      <section class="penutup">
+        <div class="penutup-teks">
+          <h2 class="penutup-judul">Terima Kasih</h2>
+          <p class="penutup-tengah">
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+            Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.
+          </p>
+          <p>
+            <strong>Salam hangat,<br />Nama Pengantin</strong>
+          </p>
+        </div>
+      </section>
+
+      <button id="musicToggle" class="music-toggle">
+        <img src="assets/pause.png" alt="asset" />
+      </button>
+      <!-- Musik -->
+      <audio src="music/music.mp3" id="music" loop></audio>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
