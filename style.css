@@ -347,10 +347,17 @@ section {
 .sub-galeri {
   text-align: center;
   font-size: 1.5rem;
-  padding: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
   color: #0f0e0e;
   font-family: "Playfair Display", sans-serif;
   font-weight: bold;
+}
+
+.galeri p {
+  color: #0f0e0e;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
 .galeri-img {
@@ -370,6 +377,14 @@ section {
 .galeri-img img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
 }
 
 /* Modal galeri */
@@ -491,6 +506,8 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-top-left-radius: 50% 5%;
+  border-top-right-radius: 50% 5%;
 }
 
 .penutup::after {
