@@ -9,6 +9,7 @@ btnOpen.addEventListener("click", function () {
   music.play();
   music.muted = false;
   btnOpen.style.display = "none";
+  AOS.refresh();
 });
 
 musicToggle.addEventListener("click", function () {

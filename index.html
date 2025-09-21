@@ -9,6 +9,9 @@
 
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Link Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,9 +27,13 @@
     <section class="cover">
       <div class="cover-text">
         <p class="sub text-shadow">The Wedding Of</p>
-        <h1 class="nama">Kirana</h1>
+        <h1 class="nama" data-aos="fade-right" data-aos-duration="2000">
+          Kirana
+        </h1>
         <h2 class="and">&</h2>
-        <h1 class="nama">Raditya</h1>
+        <h1 class="nama" data-aos="fade-left" data-aos-duration="2000">
+          Raditya
+        </h1>
         <p class="tanggal">2.3.25</p>
 
         <!-- Kartu tamu -->
@@ -43,9 +50,14 @@
       <!-- Quote -->
       <section class="quote">
         <div class="ornamen">
-          <img src="assets/umbrella.png" alt="ornamen" />
+          <img
+            src="assets/umbrella.png"
+            alt="ornamen"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+          />
         </div>
-        <p class="arab">
+        <p class="arab" data-aos="fade-down" data-aos-duration="3000">
           وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا
           لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً
           ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ
@@ -175,6 +187,7 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            data-aos="flip-up"
           ></iframe>
           <br />
           <p>Gedung Sultan Suriyansyah</p>
@@ -341,6 +354,10 @@
       <!-- Musik -->
       <audio src="music/marry_your_daugther.mpeg" id="music" loop></audio>
     </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
-  <script src="script.js"></script>
 </html>
