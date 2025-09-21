@@ -109,13 +109,11 @@ form.addEventListener("submit", function (e) {
   // Ambil nilai input
   const nama = document.getElementById("nama").value.trim();
   const grup = document.getElementById("grup").value.trim();
-  const whatsapp = document.getElementById("whatsapp").value.trim();
-  const kode = document.getElementById("country_code").value;
   const kehadiran = document.getElementById("kehadiran").value;
   const komentar = document.getElementById("komentar").value.trim();
 
   // Validasi (basic)
-  if (!nama || !grup || !whatsapp || !kehadiran) {
+  if (!nama || !grup || !kehadiran) {
     alert("Mohon isi semua kolom wajib.");
     return;
   }
@@ -126,7 +124,6 @@ form.addEventListener("submit", function (e) {
 
   entry.innerHTML = `
       <h4>${nama} (${grup})</h4>
-      <p><strong>WhatsApp:</strong> ${kode} ${whatsapp}</p>
       <p><strong>Kehadiran:</strong> ${kehadiran}</p>
       <p><strong>Ucapan:</strong> ${komentar || "(Tidak ada ucapan)"}</p>
     `;

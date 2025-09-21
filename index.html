@@ -123,8 +123,8 @@
             style="width: 45px; height: auto; margin-bottom: 1rem"
             alt="asset"
           />
-          <h2 class="sub-event">Akad</h2>
-          <p>Minggu, 9 Maret 20xx</p>
+          <h2 class="sub-event font-bold">Akad</h2>
+          <p class="font-bold">Minggu, 9 Maret 20xx</p>
           <p>08.00 - 10.00 WITA</p>
           <p>Rumah Mempelai Wanita</p>
           <p>Jl. Lorem ipsum no. 21 - South Borneo</p>
@@ -137,8 +137,8 @@
             style="width: 45px; height: auto; margin-bottom: 1rem"
             alt="asset"
           />
-          <h2 class="sub-event">Resepsi</h2>
-          <p>Minggu, 9 Maret 20xx</p>
+          <h2 class="sub-event font-bold">Resepsi</h2>
+          <p class="font-bold">Minggu, 9 Maret 20xx</p>
           <p>08.00 - 10.00 WITA</p>
           <p>Rumah Mempelai Wanita</p>
           <p>Jl. Lorem ipsum no. 21 - South Borneo</p>
@@ -197,6 +197,79 @@
         </div>
       </section>
 
+      <section class="rsvp">
+        <div
+          class="max-w-md mx-auto rounded-x-1 shawdow-md p-8"
+          style="background-color: #0f0f0f"
+        >
+          <h2 class="sub-rsvp text-center font-semibold mb-4 font-playfair">
+            RSVP
+          </h2>
+          <p class="text-center text-x1 mb-10">
+            Harap isi kehadiran di bawah ini:
+          </p>
+          <form id="rsvpForm" class="space-y-6">
+            <div>
+              <label for="nama" class="block text-sm mb-1">Nama</label>
+              <input
+                id="nama"
+                name="nama"
+                type="text"
+                placeholder="Nama"
+                required
+                class="w-full border border-gray-300 rounded-full px-4 py-2 text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+              />
+            </div>
+            <div>
+              <label for="grup" class="block text-sm mb-1">Grup</label>
+              <input
+                id="grup"
+                name="grup"
+                type="text"
+                placeholder="Grup"
+                required
+                class="w-full border border-gray-300 rounded-full px-4 py-2 text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+              />
+            </div>
+
+            <div>
+              <label for="kehadiran" class="block text-sm mb-1"
+                >Kehadiran</label
+              >
+              <select
+                id="kehadiran"
+                name="kehadiran"
+                required
+                class="w-full border border-gray-300 rounded-full px-4 py-2 text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+              >
+                <option value="" disabled selected>Kehadiran</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Berhalangan">Berhalangan</option>
+              </select>
+            </div>
+            <div>
+              <label for="komentar" class="block text-sm mb-1"
+                >Komentar atau Ucapan</label
+              >
+              <textarea
+                id="komentar"
+                name="komentar"
+                rows="4"
+                placeholder="Komentar atau ucapan"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-500 placeholder-gray-400 resize-none focus:outline-none focus:ring-2"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-[#fff] text-gray-700 py-2 text-center text-sm rounded-full"
+            >
+              Kirim
+            </button>
+          </form>
+        </div>
+        <div id="rsvpResults" class="mt-10 mb-10 space-y-4"></div>
+      </section>
+
       <section class="galeri">
         <h2 class="sub-galeri">Galeri Kami</h2>
         <p>Potongan momen indah yang kami simpan selamanya</p>
@@ -237,113 +310,15 @@
         </div>
       </section>
 
-      <section class="rsvp">
-        <div
-          class="max-w-md mx-auto rounded-x-1 shawdow-md p-8"
-          style="background-color: white"
-        >
-          <h2 class="text-center text-gray-900 text-x1 font-semibold mb-8">
-            RSVP
-          </h2>
-          <p class="text-center text-gray-900 text-x1 mb-8">
-            Harap isi kehadiran di bawah ini:
-          </p>
-          <form id="rsvpForm" class="space-y-6">
-            <div>
-              <input
-                id="nama"
-                name="nama"
-                type="text"
-                placeholder="Nama"
-                required
-                class="w-full border border-gray-300 rounded-1g px-4 py-2 text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
-              />
-            </div>
-            <div>
-              <label for="grup" class="block text-gray-700 text-sm mb-1"
-                >Grup</label
-              >
-              <input
-                id="grup"
-                name="grup"
-                type="text"
-                placeholder="Grup"
-                required
-                class="w-full border border-gray-300 rounded-1g px-4 py-2 text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
-              />
-            </div>
-            <div>
-              <label for="whatsapp" class="block text-gray-700 text-sm mb-1"
-                >No WhatsApp</label
-              >
-              <div
-                class="flex border border-gray-300 rounded-1g overflow-hidden focus-within:ring-2 focus-within:ring-gray-300"
-              >
-                <select
-                  id="country_code"
-                  name="country_code"
-                  class="bg-white text-gray-700 px-3 py-2 border-r border-gray-300 focus:outline-none"
-                >
-                  <option value="+62">+62</option>
-                </select>
-                <input
-                  id="whatsapp"
-                  name="whatsapp"
-                  type="text"
-                  placeholder="No. WhatsApp"
-                  required
-                  class="flex-1 px-4 py-2 text-gray-500 placeholder-gray-400 focus:outline-none"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label for="kehadiran" class="block text-gray-700 text-sm mb-1"
-                >Kehadiran</label
-              >
-              <select
-                id="kehadiran"
-                name="kehadiran"
-                required
-                class="w-full border border-gray-300 rounded-1g px-4 py-2 text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
-              >
-                <option value="" disabled selected>Kehadiran</option>
-                <option value="Hadir">Hadir</option>
-                <option value="Berhalangan">Berhalangan</option>
-              </select>
-            </div>
-            <div>
-              <label for="komentar" class="block text-gray-700 text-sm mb-1"
-                >Komentar atau Ucapan</label
-              >
-              <textarea
-                id="komentar"
-                name="komentar"
-                rows="4"
-                placeholder="Komentar atau ucapan"
-                class="w-full border border-gray-300 rounded-1g px-4 py-2 text-gray-500 placeholder-gray-400 resize-none focus:outline-none focus:ring-2"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="w-full bg-[#0f0e0e] text-gray-700 py-2 text-center text-white text-sm"
-            >
-              Kirim
-            </button>
-          </form>
-        </div>
-        <div id="rsvpResults" class="mt-10 space-y-4"></div>
-      </section>
-
       <section class="penutup">
         <div class="penutup-teks">
-          <h2 class="penutup-judul">Terima Kasih</h2>
+          <h2 class="penutup-judul font-playfair font-bold">Terima Kasih</h2>
           <p class="penutup-tengah">
             Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
             Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.
           </p>
           <p>
-            <strong>Salam hangat,<br />Nama Pengantin</strong>
+            <strong>Salam hangat,<br />Kirana & Raditya</strong>
           </p>
         </div>
       </section>
