@@ -22,7 +22,7 @@ section {
 .cover {
   position: relative;
   height: 100vh;
-  background: url("background/cover-lain.jpg") center/cover no-repeat;
+  background: url("background/cover-mid-lane.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -484,7 +484,7 @@ section {
 .penutup {
   position: relative;
   height: 100vh;
-  background: url("img/foto-1.jpg") center/cover no-repeat;
+  background: url("background/cover.jpg") center/cover no-repeat;
   padding: 1rem;
   display: flex;
   flex-direction: column;
