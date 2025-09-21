@@ -22,7 +22,7 @@ section {
 .cover {
   position: relative;
   height: 100vh;
-  background: url("background-snow/snow-1.jpg") center/cover no-repeat;
+  background: url("background-snow/black.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -453,8 +453,8 @@ section {
 
 .music-toggle {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 100px;
+  right: 15px;
   z-index: 99;
   background-color: #363636;
   display: flex;
@@ -484,7 +484,7 @@ section {
 .penutup {
   position: relative;
   height: 100vh;
-  background: url("background-snow/snow-1.jpg") center/cover no-repeat;
+  background: url("background-snow/black.jpg") center/cover no-repeat;
   padding: 1rem;
   display: flex;
   flex-direction: column;
