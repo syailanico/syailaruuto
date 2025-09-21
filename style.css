@@ -1,8 +1,6 @@
 body {
-  margin: 0;
   background: #819067;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #fefcf9;
 }
 
 html {
@@ -10,8 +8,10 @@ html {
 }
 
 section {
-  width: 375px; /* fix ukuran HP */
+  width: 375px;
+  max-width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /* COVER */
