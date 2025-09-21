@@ -22,7 +22,7 @@ section {
 .cover {
   position: relative;
   height: 100vh;
-  background: url("background/cover-mid-lane.jpg") center/cover no-repeat;
+  background: url("background/cover-lain.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
