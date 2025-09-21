@@ -74,7 +74,7 @@ section {
 
 .btn {
   display: inline-block;
-  background: #5682b1;
+  background: #0f0e0e;
   color: #fff;
   padding: 0.4rem 1.5rem;
   box-shadow: 5px 5px 10px gray;
@@ -85,7 +85,7 @@ section {
 }
 
 .btn:hover {
-  background-color: #5682b1;
+  background-color: #0f0e0e;
 }
 
 /* QUOTE */
@@ -267,7 +267,7 @@ section {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  background-color: #5682b1;
+  background-color: #0f0e0e;
   color: #e6e5e5;
   width: 100px;
   height: 35px;
@@ -334,7 +334,7 @@ section {
 }
 
 .btn-maps:hover {
-  background-color: #c1d699;
+  background-color: #0f0e0e;
 }
 
 /* Galeri */
