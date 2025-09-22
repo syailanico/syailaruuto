@@ -535,6 +535,7 @@ section {
   position: relative;
   z-index: 1;
   color: #fff;
+  text-shadow: 2px 2px 4px black;
 }
 
 .penutup-judul {
@@ -546,11 +547,8 @@ section {
   margin-bottom: 1rem;
 }
 
-@keyframes anim-div {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1.5);
-  }
+.nama-penutup {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-family: "Pinyon Script", cursive;
 }
